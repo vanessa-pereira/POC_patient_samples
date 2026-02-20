@@ -50,7 +50,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"dffdd0985a756a531115014bb0828e4d">
+		["MD5-CAM-1.0.1"] = <"2daf8cca21fc1d03a630ed95568d9464">
 		["build_uid"] = <"e7a889a7-c53d-35a5-b5cf-d4649b58920a">
 	>
 
@@ -60,11 +60,13 @@ definition
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Cohort study name
 				value matches {
 					DV_CODED_TEXT matches {*}
+					DV_TEXT matches {*}
 				}
 			}
 			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Assessment timeline
 				value matches {
 					DV_CODED_TEXT matches {*}
+					DV_TEXT matches {*}
 				}
 			}
 		}
